@@ -159,7 +159,7 @@ if (isNaN(a)){
 }
 
 
-*/
+
 
 //#24 Strings
 
@@ -183,3 +183,15 @@ var string2 = "bcd"
 
 //console.log(string1.toLowerCase === string2.toLowerCase)
 console.log(string1 < string2);
+
+*/
+
+// #25 Slice and Split Strings
+
+var str = "Hello, world";
+var str2 = str.slice(2, 9);
+var str3 = str.slice(2)
+
+var tags = "meat, ham, salami, pork, beef, chicken"
+
+var tagsArray = tags.split(",")
