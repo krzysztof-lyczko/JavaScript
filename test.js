@@ -1,4 +1,4 @@
-var youLikeMeat = false;
+var youLikeMeat = true;
 
 if (youLikeMeat) {
     document.write(" Here is the meat menu... ");
@@ -27,4 +27,14 @@ if (myAge > 30) {
 
 } else {
     document.write(" you are below minimum age!...")
+}
+
+
+if (myAge >= 18 && myAge <= 30) {
+    document.write(" You can come...")
+
+}
+
+if (myAge < 18 || myAge > 30) {
+    document.write(" You can't come!...")
 }
