@@ -141,7 +141,6 @@ console.log(Math.max(7, 4, 8, 9, 1));
 console.log(Math.PI);
 
 
-*/
 
 // #23 NaN
 
@@ -159,3 +158,28 @@ if (isNaN(a)){
     console.log("meaning of life is " + (a * b));
 }
 
+
+*/
+
+//#24 Strings
+
+var myString = "I Am A String ninja"
+
+console.log(myString.length);
+console.log(myString.toUpperCase());
+console.log(myString.toLowerCase());
+console.log(myString.indexOf("String"));
+
+if (myString.indexOf("ninja") === -1) {
+    console.log("the word ninja is not in the string")
+
+} else {
+    console.log("the word ninja starts at postion " + myString.indexOf("ninja"));
+}
+
+
+var string1 = "abc"
+var string2 = "bcd"
+
+//console.log(string1.toLowerCase === string2.toLowerCase)
+console.log(string1 < string2);
