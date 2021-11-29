@@ -99,7 +99,7 @@ for (i = 0; i < links.length; i++) {
 
 }
 
-*/
+
 
 // #20 Functions & #21 Variable Scope
 
@@ -123,3 +123,19 @@ function logResult(){
 }
 
 logResult();
+
+
+*/
+
+//#22 Numbers
+
+var a = 5;
+var b = 5;
+
+console.log(a + b);
+
+console.log(Math.round(7.8));
+console.log(Math.floor(7.8));
+console.log(Math.ceil(7.8));
+console.log(Math.max(7, 4, 8, 9, 1));
+console.log(Math.PI);
