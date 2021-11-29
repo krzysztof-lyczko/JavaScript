@@ -30,6 +30,7 @@ if (myAge > 30) {
 }
 
 
+
 if (myAge >= 18 && myAge <= 30) {
     document.write(" You can come...")
 
@@ -39,13 +40,30 @@ if (myAge < 18 || myAge > 30) {
     document.write(" You can't come!...")
 }
 
-
+// #16 While Loops
 var age = 5;
+
 while (age < 10) {
-    
-    console.log("Your age is less than 10");
+    console.log(" Your age is less than 10...");
     age++;
-
 }
+document.write(" You are now over 10...");
 
-document.write("You are now over 10");
+
+// #17 For Loops
+for (nmbr = 5; nmbr < 10; nmbr++) {
+    console.log(" Your number is less than 10...");
+}
+document.write(" Your number is now over 10...");
+
+
+
+var links = document.getElementsByTagName("a")
+
+for (i = 1; i <= links.length; i++) {
+    console.log(" This is link number " + i);
+}
+document.write(" All links now looped...");
+
+
+
