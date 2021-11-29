@@ -101,14 +101,25 @@ for (i = 0; i < links.length; i++) {
 
 */
 
-// #20 Functions
+// #20 Functions & #21 Variable Scope
 
-function getAvarage(a, b, c, d, e, f) {
+function getAvarage(a, b) {
 
-    var average = (a + b + c + d + e + f) / 6;
+    var average = (a + b) / 2; //local variable
     console.log(average);
     return average
 }
 
-var myResult = getAvarage(7, 8, 9, 10, 11, 12);
-console.log("the average is " + myResult)
+var myResult = getAvarage(7, 11); //global variable
+
+console.log("the average is " + myResult);
+
+
+
+function logResult(){
+
+    console.log("the average is " + myResult + " inside the function");
+
+}
+
+logResult();
