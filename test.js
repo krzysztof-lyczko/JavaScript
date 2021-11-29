@@ -1,3 +1,4 @@
+/*
 var youLikeMeat = true;
 
 if (youLikeMeat) {
@@ -41,6 +42,7 @@ if (myAge < 18 || myAge > 30) {
 }
 
 // #16 While Loops
+
 var age = 5;
 
 while (age < 10) {
@@ -51,6 +53,7 @@ document.write(" You are now over 10...");
 
 
 // #17 For Loops
+
 for (nmbr = 5; nmbr < 10; nmbr++) {
     console.log(" Your number is less than 10...");
 }
@@ -68,6 +71,7 @@ document.write(" All links now looped...");
 
 
 // #18 Break & Continue
+
 for (i = 0; i < 10; i++) {
 
     if (i === 5 || i === 3) {
@@ -82,3 +86,15 @@ for (i = 0; i < 10; i++) {
 }
 
 console.log("I've broken out of the loop");
+
+*/
+
+// #19 Practical Example using Loops
+
+var links = document.getElementsByTagName("a");
+
+for (i = 0; i < links.length; i++) {
+    
+    links[i].className = "link-" + i;
+    
+}
