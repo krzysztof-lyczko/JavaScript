@@ -184,7 +184,7 @@ var string2 = "bcd"
 //console.log(string1.toLowerCase === string2.toLowerCase)
 console.log(string1 < string2);
 
-*/
+
 
 // #25 Slice and Split Strings
 
@@ -195,3 +195,23 @@ var str3 = str.slice(2)
 var tags = "meat, ham, salami, pork, beef, chicken"
 
 var tagsArray = tags.split(",")
+
+
+*/
+// #26 Arrays
+
+var myArray = [];
+myArray[0] = 25;
+myArray[1] = 35;
+myArray[2] = true;
+myArray[3] = "hello";
+myArray[2] = false;
+
+var myArray2 = [10, 20,"hi",false];
+console.log(myArray2.length);
+console.log(myArray2.sort());
+console.log(myArray2.reverse())
+
+var myArray3 = new Array();
+
+var myArray4 = new Array(5);
