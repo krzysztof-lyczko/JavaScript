@@ -87,7 +87,7 @@ for (i = 0; i < 10; i++) {
 
 console.log("I've broken out of the loop");
 
-*/
+
 
 // #19 Practical Example using Loops
 
@@ -96,5 +96,19 @@ var links = document.getElementsByTagName("a");
 for (i = 0; i < links.length; i++) {
     
     links[i].className = "link-" + i;
-    
+
 }
+
+*/
+
+// #20 Functions
+
+function getAvarage(a, b, c, d, e, f) {
+
+    var average = (a + b + c + d + e + f) / 6;
+    console.log(average);
+    return average
+}
+
+var myResult = getAvarage(7, 8, 9, 10, 11, 12);
+console.log("the average is " + myResult)
