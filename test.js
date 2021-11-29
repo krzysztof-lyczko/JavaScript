@@ -125,7 +125,7 @@ function logResult(){
 logResult();
 
 
-*/
+
 
 //#22 Numbers
 
@@ -139,3 +139,23 @@ console.log(Math.floor(7.8));
 console.log(Math.ceil(7.8));
 console.log(Math.max(7, 4, 8, 9, 1));
 console.log(Math.PI);
+
+
+*/
+
+// #23 NaN
+
+var a = 6;
+var b = 5;
+
+console.log(a * b);
+
+if (isNaN(a)){
+
+    console.log("that's not a number");
+
+} else {
+
+    console.log("meaning of life is " + (a * b));
+}
+
