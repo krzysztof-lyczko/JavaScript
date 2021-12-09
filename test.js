@@ -332,7 +332,7 @@ if (birthday.getTime == birthday2.getTime) {
     console.log("birthdays are not equal")
 }
 
-*/
+
 
 // #40 onClick Event
 
@@ -351,3 +351,33 @@ button.onclick = function () {
         button.innerHTML = "Show Less";
     }
 }
+
+*/
+
+// #41 Window onLoad Event
+
+function setUpEvents() {
+
+    var content = document.getElementById("content")
+    var button = document.getElementById("show-more")
+
+    button.onclick = function () {
+
+        if (content.className == "open") {
+            //shrink the box
+            content.className = "";
+            button.innerHTML = "Show More";
+        } else {
+            //expand the box
+            content.className = "open";
+            button.innerHTML = "Show Less";
+        }
+    }
+
+}
+
+
+
+window.onload = function () {
+    setUpEvents();
+};
