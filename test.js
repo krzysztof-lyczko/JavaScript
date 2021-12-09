@@ -383,7 +383,7 @@ window.onload = function () {
 };
 
 
-*/
+
 
 // #42 JavaScript Timers
 
@@ -410,3 +410,22 @@ colorChanger.onclick = function () {
     clearInterval(myTimer);
     colorChanger.innerHTML = "timer stopped";
 }
+
+*/
+
+// #44 Accessing Form Elements
+
+var myForm = document.forms.myForm;
+var message = document.getElementById("message");
+
+myForm.onsubmit = function () {
+
+    if (myForm.name.value == "") {
+        message.innerHTML = "please eneter a name";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
+    }
+
+};

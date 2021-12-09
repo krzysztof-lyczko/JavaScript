@@ -10,14 +10,23 @@
 
 <body>
 
-    <div id="message">
+    <form id="my-form" name="myForm" action="#">
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br />
+        <label>Hobbies:</label><br />
+        <input type="checkbox" name="biking" value="biking">Biking<br />
+        <input type="checkbox" name="skiing" value="skiing">Skiing<br />
+        <input type="checkbox" name="diving" value="driving">Driving<br />
+        <label for="colour">Fav colour:</label>
+        <select name="colour">
+            <option>Red </option>
+            <option>Blue</option>
+            <option>Green</option>
+        </select>
+        <input type="submit" name="submit" value="Submit">
+    </form>
 
-        <p> THIS IS A REEEEEEAAAAAAAAAALLY IMPORTANT NOTIFICATION</p>
-        <p> hi. </p>
-
-    </div>
-
-    <div id="color-changer">
+    <div id="message" style="color: red;"></div>
 
     <script src="test.js"></script>
 
