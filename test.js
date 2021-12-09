@@ -411,7 +411,6 @@ colorChanger.onclick = function () {
     colorChanger.innerHTML = "timer stopped";
 }
 
-*/
 
 // #44 Accessing Form Elements
 
@@ -429,3 +428,10 @@ myForm.onsubmit = function () {
     }
 
 };
+
+*/
+
+// #45 JavaScript Libraries
+
+var myPara = $("#content p:last-child");
+
