@@ -241,7 +241,7 @@ var myCar2 = {
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3);
 
-*/
+
 // #29 THIS Keyword
 
 
@@ -274,3 +274,29 @@ myCar2.logDriver();
 myCar3.test();
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3);
+
+*/
+
+// #30 Constructor Functions
+
+
+
+var Car = function (maxSpeed, driver) {
+
+    this.maxSpeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function (speed, time) {
+        console.log(speed * time);
+    };
+    this.logDriver = function () {
+        console.log("driver name is " + this.driver);
+    };
+}
+
+var myCar = new Car(70, "Krzysztof");
+var myCar2 = new Car(30, "Leon");
+var myCar3 = new Car(50, "Filemon");
+var myCar4 = new Car(120, "Kamil");
+
+myCar.drive(30, 5);
+myCar.logDriver();
