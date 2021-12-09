@@ -197,7 +197,7 @@ var tags = "meat, ham, salami, pork, beef, chicken"
 var tagsArray = tags.split(",")
 
 
-*/
+
 // #26 Arrays
 
 var myArray = [];
@@ -215,3 +215,28 @@ console.log(myArray2.reverse())
 var myArray3 = new Array();
 
 var myArray4 = new Array(5);
+
+
+*/
+// #28 Objects
+
+var myArray = new Array()
+myArray[0] = 8;
+myArray[1] = "hello";
+
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Shaun";
+myCar.drive = function () { console.log("now driving"); };
+
+myCar.drive();
+
+var myCar2 = {
+    maxSpeed: 70,
+    driver: "Krzysztof",
+    drive: function (speed, time) 
+    { console.log(speed*time); }
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
