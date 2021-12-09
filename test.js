@@ -275,7 +275,7 @@ myCar3.test();
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3);
 
-*/
+
 
 // #30 Constructor Functions
 
@@ -300,3 +300,35 @@ var myCar4 = new Car(120, "Kamil");
 
 myCar.drive(30, 5);
 myCar.logDriver();
+
+*/
+
+// #31 The Date Object
+
+var myDate = new Date();
+console.log(myDate);
+
+var myFutureDate = new Date(2400, 4, 11, 16, 40, 2);
+var myPastDate = new Date(1545, 4, 11);
+
+console.log(myPastDate);
+console.log(myFutureDate);
+
+
+var birthday = new Date(2000, 4, 11, 22, 30, 15);
+var birthday2 = new Date(2000, 4, 11, 22, 30, 15);
+
+console.log(birthday.getMonth());
+console.log(birthday.getFullYear());
+console.log(birthday.getDate());
+console.log(birthday.getDay());
+console.log(birthday.getHours());
+console.log(birthday.getTime());
+
+if (birthday.getTime == birthday2.getTime) {
+    
+    console.log("birthdays are equal")
+
+} else {
+    console.log("birthdays are not equal")
+}
