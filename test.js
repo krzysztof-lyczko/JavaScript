@@ -301,7 +301,6 @@ var myCar4 = new Car(120, "Kamil");
 myCar.drive(30, 5);
 myCar.logDriver();
 
-*/
 
 // #31 The Date Object
 
@@ -326,9 +325,29 @@ console.log(birthday.getHours());
 console.log(birthday.getTime());
 
 if (birthday.getTime == birthday2.getTime) {
-    
+
     console.log("birthdays are equal")
 
 } else {
     console.log("birthdays are not equal")
+}
+
+*/
+
+// #40 onClick Event
+
+var content = document.getElementById("content")
+var button = document.getElementById("show-more")
+
+button.onclick = function () {
+
+    if (content.className == "open") {
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    } else {
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
 }
