@@ -217,7 +217,7 @@ var myArray3 = new Array();
 var myArray4 = new Array(5);
 
 
-*/
+
 // #28 Objects
 
 var myArray = new Array()
@@ -238,5 +238,39 @@ var myCar2 = {
     { console.log(speed*time); }
 };
 
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
+
+*/
+// #29 THIS Keyword
+
+
+
+var myCar2 = {
+    maxSpeed: 70,
+    driver: "Krzysztof",
+    drive: function (speed, time) {
+        console.log(speed * time);
+    },
+    logDriver: function () {
+        console.log("driver name is " + this.driver);
+    }
+}
+
+
+
+var myCar3 = {
+    maxSpeed: 70,
+    driver: "filem",
+    drive: function (speed, time) {
+        console.log(speed * time);
+    },
+    test: function () {
+        console.log(this);
+    }
+}
+
+myCar2.logDriver();
+myCar3.test();
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3);
